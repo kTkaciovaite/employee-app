@@ -1,0 +1,47 @@
+.employee-page {
+    padding-left: 4px;
+}
+
+.employee-page .employee-info {
+    border: solid 1px #ccc;
+    border-radius: 4px;
+}
+
+.employee-page .employee-info-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+}
+
+.employee-page .employee-info-header img {
+    border-radius: 100%;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.employee-page .employee-name {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.employee-page .employee-title {
+    font-size: 16px;
+    color: #c2c2c2;
+}
+
+.employee-page .employee-info-item {
+    padding: 12px 16px;
+    border-top: solid 1px #ccc;
+}
+
+.employee-page .employee-info-item .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.employee-page .employee-info-item .content {
+    font-size: 14px;
+    color: #c2c2c2;
+}

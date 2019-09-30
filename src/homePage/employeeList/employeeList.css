@@ -1,0 +1,44 @@
+.employee-list {
+    max-height: 500px;
+    overflow: auto;
+    padding-right: 4px;
+}
+
+.employee-list .employee {
+    display: flex;
+    border: solid 1px #ccc;
+    margin: 6px 0;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.employee-list .employee:hover {
+    border-color: #777;
+}
+
+.employee-list .employee:first-child {
+    margin-top: 0;
+}
+
+.employee-list .employee:last-child {
+    margin-bottom: 0;
+}
+
+.employee-list .employee img {
+    width: 60px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.employee-list .employee-name {
+    font-size: 18px;
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+
+.employee-list .employee-title {
+    font-size: 14px;
+    color: #c2c2c2;
+}

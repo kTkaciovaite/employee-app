@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { GlobalStateProvider } from "./store/state";
+import { HomePage } from "./homePage/homePage";
+import { EmployeePage } from "./employeePage/employeePage";
+
+import "./App.css";
+
+const App = () => {
+    return (
+        <GlobalStateProvider>
+            <div className="employee-app">
+                <HomePage />
+                <EmployeePage />
+            </div>
+        </GlobalStateProvider>
+    );
 }
 
-export default App;
+export  { App };
